@@ -11,6 +11,7 @@
   <meta property="og:description" content="I build AI products for regulated, mission-critical environments. Fractional CPO engagements in healthcare AI, pharma, and aerospace." />
   <meta property="og:url" content="https://mtoyserkani.com" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mtoyserkani.com/mojdeh-toyserkani.jpg" />
   <link rel="canonical" href="https://mtoyserkani.com" />
   <meta name="google-site-verification" content="AYUhUSchyZkid9VXO_PN0YZ5IkHEcY2Hx5sHVKPA0Kk" />
   <meta name="msvalidate.01" content="AC3362093A28FFE7928C78202C2109D1" />
@@ -22,6 +23,7 @@
     "@type": "Person",
     "name": "Mojdeh Toyserkani",
     "url": "https://mtoyserkani.com",
+    "image": "https://mtoyserkani.com/mojdeh-toyserkani.jpg",
     "jobTitle": "Fractional CPO & AI Product Leader",
     "description": "AI product leader specializing in regulated industries including healthcare AI, pharma, and aerospace. Expert in FDA 21 CFR Part 11, DO-178B, data platforms, and compliance-critical AI systems.",
     "knowsAbout": ["Healthcare AI", "FDA Compliance", "DO-178B", "Data Platforms", "Conversational AI", "Pharmacovigilance AI", "Fractional CPO", "Product Strategy"],
@@ -72,6 +74,35 @@
     header {
       padding: 5rem 0 3rem;
       border-bottom: 1px solid var(--rule);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+
+    .header-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .header-photo {
+      flex-shrink: 0;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--rule);
+      margin-top: 0.5rem;
+    }
+
+    .header-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
     }
 
     .eyebrow {
@@ -301,6 +332,8 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
+      .header-inner { flex-direction: column-reverse; gap: 1.5rem; }
+      .header-photo { width: 120px; height: 120px; }
       .proof-grid { grid-template-columns: 1fr; gap: 1.2rem; }
       .domain-list li { grid-template-columns: 1fr; gap: 0.3rem; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
@@ -313,20 +346,27 @@
   <!-- HEADER -->
   <header>
     <div class="container">
-      <p class="eyebrow">AI Product · Data Platforms · Regulated Industries</p>
-      <h1>Mojdeh<br /><em>Toyserkani</em></h1>
-      <p class="headline">
-        I build AI products for regulated, mission-critical environments —
-        where failure has real consequences and compliance is the product.
-      </p>
-      <div class="tag-row">
-        <span class="tag">Fractional CPO</span>
-        <span class="tag">Healthcare AI</span>
-        <span class="tag">FDA 21 CFR Part 11</span>
-        <span class="tag">DO-178B</span>
-        <span class="tag">Data Platforms</span>
-        <span class="tag">Conversational AI</span>
-        <span class="tag">eVTOL · Aerospace</span>
+      <div class="header-inner">
+        <div class="header-text">
+          <p class="eyebrow">AI Product · Data Platforms · Regulated Industries</p>
+          <h1>Mojdeh<br /><em>Toyserkani</em></h1>
+          <p class="headline">
+            I build AI products for regulated, mission-critical environments —
+            where failure has real consequences and compliance is the product.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Fractional CPO</span>
+            <span class="tag">Healthcare AI</span>
+            <span class="tag">FDA 21 CFR Part 11</span>
+            <span class="tag">DO-178B</span>
+            <span class="tag">Data Platforms</span>
+            <span class="tag">Conversational AI</span>
+            <span class="tag">eVTOL · Aerospace</span>
+          </div>
+        </div>
+        <div class="header-photo">
+          <img src="mojdeh-toyserkani.jpg" alt="Mojdeh Toyserkani — Fractional CPO and AI Product Leader" />
+        </div>
       </div>
     </div>
   </header>
