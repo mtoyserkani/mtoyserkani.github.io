@@ -42,12 +42,13 @@
 
   <style>
     :root {
-      --ink: #0d0d0d;
-      --paper: #f5f2ec;
-      --accent: #c8512a;
-      --muted: #6b6560;
-      --rule: #d8d3cb;
-      --highlight: #1a3a4a;
+      --ink: #1a2744;
+      --paper: #f7f8fc;
+      --accent: #1a85a0;
+      --muted: #4a5570;
+      --rule: #e0e4ee;
+      --highlight: #2e3f6e;
+      --cta: #e05a8a;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -93,7 +94,7 @@
       height: 160px;
       border-radius: 50%;
       overflow: hidden;
-      border: 3px solid var(--rule);
+      border: 3px solid var(--accent);
       margin-top: 0.5rem;
     }
 
@@ -126,8 +127,8 @@
     }
 
     h1 em {
-      font-style: italic;
-      color: var(--accent);
+      font-style: normal;
+      color: var(--ink);
     }
 
     .headline {
@@ -177,7 +178,7 @@
 
     p {
       font-size: 1rem;
-      color: #2a2520;
+      color: #2a3350;
       margin-bottom: 1.1rem;
       max-width: 660px;
     }
@@ -207,7 +208,7 @@
 
     .proof-text {
       font-size: 0.92rem;
-      color: #2a2520;
+      color: #2a3350;
       line-height: 1.5;
       margin: 0;
     }
@@ -240,7 +241,7 @@
 
     .domain-desc {
       font-size: 0.93rem;
-      color: #2a2520;
+      color: #2a3350;
       line-height: 1.55;
     }
 
@@ -267,7 +268,7 @@
       text-decoration: none;
       padding: 0.85rem 2rem;
       background: var(--ink);
-      color: var(--paper);
+      color: #fff;
       border: none;
       cursor: pointer;
       transition: background 0.2s, color 0.2s;
@@ -476,7 +477,7 @@
         Based in the Bay Area from July 2026.
       </p>
       <a class="btn" href="https://www.linkedin.com/in/mojdeh-toyserkani/" target="_blank" rel="noopener">
-        Connect on LinkedIn
+        Connect on LinkedIn <span style="color:#e05a8a;">→</span>
       </a>
     </div>
   </div>
