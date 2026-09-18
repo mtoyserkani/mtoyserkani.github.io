@@ -95,15 +95,22 @@
 
     .tag-group-label {
       font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em;
-      text-transform: uppercase; color: var(--accent); margin: 1rem 0 0.4rem;
+      text-transform: uppercase; color: var(--accent); margin: 1.4rem 0 0.5rem;
     }
     .tag-group-label:first-of-type { margin-top: 0.5rem; }
 
-    .tag-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem; }
+    /* Roles & Verticals: stacked, one per line */
+    .tag-stack { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.3rem; }
+
+    /* Skills & Expertise: two-column grid */
+    .tag-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem 0.5rem; margin-top: 0.3rem;
+    }
+
     .tag {
       font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em;
-      padding: 0.3rem 0.75rem; border: 1px solid var(--rule); border-radius: 2px;
-      color: var(--muted); background: transparent;
+      padding: 0.45rem 0.85rem; border: 1px solid var(--rule); border-radius: 2px;
+      color: var(--muted); background: transparent; display: block;
     }
 
     section { padding: 3.5rem 0; border-bottom: 1px solid var(--rule); }
@@ -173,6 +180,7 @@
       .header-inner { flex-direction: column-reverse; gap: 1.5rem; }
       .header-photo { width: 120px; height: 120px; }
       .proof-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+      .tag-grid { grid-template-columns: 1fr; }
       .domain-list li { grid-template-columns: 1fr; gap: 0.3rem; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
       h1 { font-size: 2.6rem; }
@@ -195,26 +203,23 @@
           </p>
 
           <p class="tag-group-label">Roles</p>
-          <div class="tag-row">
-            <span class="tag">Product Strategy, Portfolio & Roadmap</span>
-            <span class="tag">AI Product Governance</span>
-            <span class="tag">Product Operations & Operating Model Design</span>
-            <span class="tag">Data Product & Platform Strategy</span>
+          <div class="tag-stack">
+            <span class="tag">Product Strategy & Roadmap</span>
+            <span class="tag">Product Operations</span>
             <span class="tag">Cross-Functional Product Delivery</span>
           </div>
 
           <p class="tag-group-label">Verticals</p>
-          <div class="tag-row">
+          <div class="tag-stack">
             <span class="tag">Aerospace & Advanced Aviation (eVTOL)</span>
             <span class="tag">Digital Health & HealthTech</span>
             <span class="tag">Biopharma & Life Sciences</span>
           </div>
 
           <p class="tag-group-label">Skills & Expertise</p>
-          <div class="tag-row">
+          <div class="tag-grid">
             <span class="tag">AI Governance & Risk Controls</span>
             <span class="tag">Data Governance & Stewardship</span>
-            <span class="tag">AI Product Strategy</span>
             <span class="tag">Data Products & Platforms</span>
             <span class="tag">Data Quality, Lineage & Observability</span>
             <span class="tag">Customer Data Platforms (CDP) & CRM</span>
@@ -264,8 +269,8 @@
         <a class="inline-link" href="https://www.uber.com/" target="_blank" rel="noopener">Uber</a>,
         <a class="inline-link" href="https://www.humana.com/" target="_blank" rel="noopener">Humana</a>, and
         <a class="inline-link" href="https://www.ikea.com/us/en/" target="_blank" rel="noopener">IKEA</a>.
-        Led GDPR-compliant data-governance capabilities, scoped audit-trail integration, and defined role-based access-control requirements for the Customer Data and Custom Data Management layer.
-        That customer 360 layer powers personalization across
+        Built GDPR-compliant data governance, scoped audit trail integration, and defined role-based
+        access control for the schema layer. That customer 360 layer powers personalization across
         Genesys AI products: Predictive Routing, Virtual Agent, and Agent Copilot.
       </p>
       <p>
